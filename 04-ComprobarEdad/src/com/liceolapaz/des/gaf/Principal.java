@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Principal {
 
+	private static final int ANO_ACTUAL = 2021;
+	
 	public static void main(String[] args) {
 		// Pedir año de nacimiento
 		pedirAno();
@@ -16,9 +18,9 @@ public class Principal {
 	private static void escribirMensaje(int ano) {
 		String mensaje = "";
 		
-		if (ano > 2021) {
+		if (ano > ANO_ACTUAL) {
 			mensaje = "Año no válido.";
-		} else if (2021 - ano >= 18 && 2021 - ano < 150) {
+		} else if (ANO_ACTUAL - ano >= 18 && ANO_ACTUAL - ano < 150) {
 			mensaje = "Puedes pasar.";
 		}else {
 			mensaje = "No puede pasar.";
